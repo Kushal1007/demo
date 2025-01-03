@@ -1,0 +1,41 @@
+HTML Learning- Hyper text markup Language
+
+Formating:
+<p>This text will be <mark>marked</mark></p>
+<p>this text will be underlined like <ins>inserted</ins>
+<p>this text will have a line in the middle of the text <del>Deleted</del>
+<p>This text will be little down <sub>Subscript</sub>
+<p>this text will be up<sup>Super subscript</sup>
+
+Links:
+_self:opens the document in the same window
+<a href="example.com" target="_self">Example</a>
+_blank:opens the document in other new window
+<a href="example.com" target="_blank">Example</a>
+_top:opens the link in full window size
+
+Absolute URL:using full web address
+Relative URL:using to link within the same website
+<p><a href="html_images.asp">HTML Images</a></p>
+To open someone's EMAIL: use mailto
+<a href="mailto:someone@example.com">Send email</a>
+
+Image Map:
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+Example:https://www.w3schools.com/html/html_images_imagemap.asp
+
+Background Image:
+<p style="Background-image: url('img.png');">
+To cover the whole page add:
+background-size:cover;
+
+Picture Element:
+<picture>
+<source media="(min-width:650px)" srcset="image.png"/>
+<source media="(min-width:450px)" srcset="image2.png"/>
