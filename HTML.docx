@@ -39,3 +39,60 @@ Picture Element:
 <picture>
 <source media="(min-width:650px)" srcset="image.png"/>
 <source media="(min-width:450px)" srcset="image2.png"/>
+
+Favicon:
+<link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+
+TABLE:
+To add Horizontal ZEBRA strips in the TABLE
+tr:nth-child(even){
+  background-color:blue;
+}
+To add Vertical:
+td:nth-child()even,th:nth-child(even){
+  background-color:blue;
+}
+For horizontal lines in table:
+table{
+  border-collapse:collapse;
+  width:100%;
+}
+tr{
+  border-bottom:1px solid black;
+}
+To add hover feature:
+tr:hover{background-color:red;}
+Colgroup:
+<colgroup>
+<col span="2" style:"background-color=red;">
+This will add bg color to the first 2 coloums
+
+LISTS:
+ol-ordered list 
+ul-unordered list
+li-List item
+<dl>-description list 
+<dt>-definition term(name)
+<dd>-description
+Example:
+<dl>
+<dt>ball</dt>
+<dd>- round</dd>
+<dt>box</dt>
+<dd>- square</dd>
+</dl>
+Style of the list:
+<ul style="list-style-type:disc;">(circle,square,none)
+To make the list horizontal:
+li { float:left;}
+For ordered list:
+<ol type="1"> a for letters,i for roman numbers
+To start it from middle of a number:
+<ol start="50">
+
+DIV:
+div
+  display:inline:block;
+  To display items one beside the other
+  display:flex;
+  To make the display flexible
