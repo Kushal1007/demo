@@ -49,7 +49,7 @@ tr:nth-child(even){
   background-color:blue;
 }
 To add Vertical:
-td:nth-child()even,th:nth-child(even){
+td:nth-child(even),th:nth-child(even){
   background-color:blue;
 }
 For horizontal lines in table:
@@ -92,7 +92,36 @@ To start it from middle of a number:
 
 DIV:
 div
-  display:inline:block;
+  display:inline-block;
   To display items one beside the other
   display:flex;
   To make the display flexible
+  margin:auto;
+  To center a div
+  display:grid;
+  grid-template-colums:33% 33% 33%;
+  To make the display in a grid
+
+ID element can be used to track back any element from the same page
+EG:<p><a href="#C4">click here to gotoChapter 4</a></p>
+<h class="C4">Chapter 4</h>
+Or also can be used to track anything from other page
+<a href="demo.html#C4">here is CHAPTER4</a>
+
+iframe:
+This is ued to display a webpage inside a webpage
+<iframe src="demo.html" style="height:500px,width:500px;" title"demo"></iframe>
+We can also use a target element to display on the iframe
+<iframe src="demo.html" style="height:500px,width:500px;" name="iframe_target" title="demo"></iframe>
+<a href="w3schools.com" target="iframe_target">W3schools</a>
+EG:https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target
+
+Image:
+<img src="picture.jpg">	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder
+
+Viewport:
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
