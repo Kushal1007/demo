@@ -125,3 +125,16 @@ Image:
 Viewport:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Responsive:
+@media only screen and (max-width:800px)
+.main{ }
+style="width=100%;"
+When an image is size is set in percentage(100%) it changes accordingly to the size of the device.
+style="max-width=100%;height=auto;"
+This will keep the image size as of the original but as the window size decreases it also adjusts to it.
+Different images based on display size
+<piture>
+<source srcset="flower_img.jpeg" media="(max-width:600px)">
+<source srcset="flower_img2.jpeg" media="(max-width:1000px)">
+<img src="flowers.img" alt="flowers" style="width:auto;"> 
