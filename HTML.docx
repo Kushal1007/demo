@@ -1,0 +1,140 @@
+HTML Learning- Hyper text markup Language
+
+Formating:
+<p>This text will be <mark>marked</mark></p>
+<p>this text will be underlined like <ins>inserted</ins>
+<p>this text will have a line in the middle of the text <del>Deleted</del>
+<p>This text will be little down <sub>Subscript</sub>
+<p>this text will be up<sup>Super subscript</sup>
+
+Links:
+_self:opens the document in the same window
+<a href="example.com" target="_self">Example</a>
+_blank:opens the document in other new window
+<a href="example.com" target="_blank">Example</a>
+_top:opens the link in full window size
+
+Absolute URL:using full web address
+Relative URL:using to link within the same website
+<p><a href="html_images.asp">HTML Images</a></p>
+To open someone's EMAIL: use mailto
+<a href="mailto:someone@example.com">Send email</a>
+
+Image Map:
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+Example:https://www.w3schools.com/html/html_images_imagemap.asp
+
+Background Image:
+<p style="Background-image: url('img.png');">
+To cover the whole page add:
+background-size:cover;
+
+Picture Element:
+<picture>
+<source media="(min-width:650px)" srcset="image.png"/>
+<source media="(min-width:450px)" srcset="image2.png"/>
+
+Favicon:
+<link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+
+TABLE:
+To add Horizontal ZEBRA strips in the TABLE
+tr:nth-child(even){
+  background-color:blue;
+}
+To add Vertical:
+td:nth-child(even),th:nth-child(even){
+  background-color:blue;
+}
+For horizontal lines in table:
+table{
+  border-collapse:collapse;
+  width:100%;
+}
+tr{
+  border-bottom:1px solid black;
+}
+To add hover feature:
+tr:hover{background-color:red;}
+Colgroup:
+<colgroup>
+<col span="2" style:"background-color=red;">
+This will add bg color to the first 2 coloums
+
+LISTS:
+ol-ordered list 
+ul-unordered list
+li-List item
+<dl>-description list 
+<dt>-definition term(name)
+<dd>-description
+Example:
+<dl>
+<dt>ball</dt>
+<dd>- round</dd>
+<dt>box</dt>
+<dd>- square</dd>
+</dl>
+Style of the list:
+<ul style="list-style-type:disc;">(circle,square,none)
+To make the list horizontal:
+li { float:left;}
+For ordered list:
+<ol type="1"> a for letters,i for roman numbers
+To start it from middle of a number:
+<ol start="50">
+
+DIV:
+div
+  display:inline-block;
+  To display items one beside the other
+  display:flex;
+  To make the display flexible
+  margin:auto;
+  To center a div
+  display:grid;
+  grid-template-colums:33% 33% 33%;
+  To make the display in a grid
+
+ID element can be used to track back any element from the same page
+EG:<p><a href="#C4">click here to gotoChapter 4</a></p>
+<h class="C4">Chapter 4</h>
+Or also can be used to track anything from other page
+<a href="demo.html#C4">here is CHAPTER4</a>
+
+iframe:
+This is ued to display a webpage inside a webpage
+<iframe src="demo.html" style="height:500px,width:500px;" title"demo"></iframe>
+We can also use a target element to display on the iframe
+<iframe src="demo.html" style="height:500px,width:500px;" name="iframe_target" title="demo"></iframe>
+<a href="w3schools.com" target="iframe_target">W3schools</a>
+EG:https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target
+
+Image:
+<img src="picture.jpg">	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder
+
+Viewport:
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Responsive:
+@media only screen and (max-width:800px)
+.main{ }
+style="width=100%;"
+When an image is size is set in percentage(100%) it changes accordingly to the size of the device.
+style="max-width=100%;height=auto;"
+This will keep the image size as of the original but as the window size decreases it also adjusts to it.
+Different images based on display size
+<piture>
+<source srcset="flower_img.jpeg" media="(max-width:600px)">
+<source srcset="flower_img2.jpeg" media="(max-width:1000px)">
+<img src="flowers.img" alt="flowers" style="width:auto;"> 
