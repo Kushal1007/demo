@@ -138,3 +138,95 @@ Different images based on display size
 <source srcset="flower_img.jpeg" media="(max-width:600px)">
 <source srcset="flower_img2.jpeg" media="(max-width:1000px)">
 <img src="flowers.img" alt="flowers" style="width:auto;"> 
+Must add:
+*{
+  box-sizing:border-box;
+}
+To place the links one below the other in proper space:
+display:block;
+To maintain different bg colors:
+<div style="overflow:auto">
+
+Computer Codes:
+<code> to make the text as a code
+<kbd> Keyboard Input
+<samp> Sample output
+
+https://www.w3schools.com:80/html/html.asp
+Here:
+scheme://prefix.domain:portnumber/path/filename
+
+FORMS:
+<form action="action.php" method="get">
+GET:displays user info in the URL
+POST:hides the user info
+
+<label for="fname">first name :</label>
+<input type="text" id="fname" name="fname" value="John">
+
+<label for="branch">Branch</label>
+<input type="radio" id="branch" name="branch" value="CSE>
+<label for="branch">Computer Science</label>
+<input type="radio" id="branch" name="branch" value="ISE>
+<label for="branch">Information Science</label>
+
+<label for="vehicle">Which vehicle do you have?</label>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">I have a bike</label>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2">I have a car</label>
+
+<input type="button" onclick="alert('hello!!!)" value="button">
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+
+<label for="cars">Choose a Car :</label>
+<select id="cars" name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="mercedes">Mercedes</option>
+<option value="audi">Audi</option>
+</select>
+<input type="submit">
+We can also mention the size of the scroll branch
+<select id="cars" name="cars" size="4">
+
+<textarea name="message" rows="10" cols="50">hello this is a demo project</textarea>
+we can also specify it as width and height
+<textarea name="message" style="width:100px;height:200px;"
+
+<field> It adds a border and makes the form look better
+<legend> Adds a caption to the form
+
+<input list="browser" name="browsers">
+<datalist id="browser">
+<option value="Chrome">
+<option value="Firefox">
+</datalist>
+This adds some predefined data for the user to choose from
+<input type="range" min="1" max="100" > 
+Adds a range meter
+
+<input type="date" id="datemax" name="datemax" max="2000-01-01">
+<input type="datetime-local" id="datetime" name="datetime">
+
+<input type="file" id="myfile" name="myfile">
+
+<input type="number" id="num" name="num" min="1" max="10">
+
+<input type="tel" id="phone" name="phone" placeholder="9876543210" pattern="[9-7][0-9]{9}">
+<input type="text" id="pincode" name="pincode" pattern="[A-Za-z]{3}">
+This means the first number should be btw 9-7 and next 9 numbers should be btw 0 to 9
+
+<input type="text" id="fname" name="fname" value="John" readonly>
+<input type="text" id="fname" name="fname" value="John" disabled>
+This means the text cannot be changed 
+
+<input type="number" name="pin" id="pin" maxlength="4">
+Only 4 numbers can be entered
+
+<input type="text" id="fname" name="fname" required>
+This means the users has to compulsory fill the field
+
+
+
