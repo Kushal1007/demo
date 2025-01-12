@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Jewellers</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #3C3D37;
+    margin: 0 auto;
+    width: 85%;
+}
+    header{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        background-color: #1D1616;
+    }
+    header img{
+        margin-top: -21px;
+        float: left;
+        align-items: center;
+        width: 300px;
+        height:150px;
+    }
+    header h1{
+        font-size: 40px;
+        color:#EEEEEE;
+        margin-right: 50px;
+    }
+    .nav{
+        text-align: center;
+        background-color: wheat;
+        padding: 10px;
+        display: block;
+        word-spacing: 200px;
+        text-decoration: none;
+    }
+    .nav a{
+        font-weight: bolder;
+        text-decoration: none;
+        color: #8E1616;
+        font-size: 25px;
+    }
+    .about h1{
+        color: #CBA35C;
+    }
+    main{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .rates{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 80%;
+    }
+    .gold{
+        border: 1px solid #FFF4B7;
+        width: 40%;
+        margin: 20px 20px;
+        margin-left: 100px;
+        border-radius:20px;
+        padding: 10px;
+    }
+    .silver{
+        border: 1px solid #FFF4B7;
+        width: 40%;
+        padding: 10px ;
+        margin: 20px 20px;
+        margin-right: 100px;
+        border-radius:20px;
+    }
+    .nav a:hover{
+        border-bottom: 1px solid black;
+    }
+    .gold:hover{
+        background-color: rgb(207, 176, 3);
+        color: black;
+    }
+    .silver:hover{
+        background-color: rgb(164, 163, 163);
+        color: black;
+    }
+    section h2{
+        color: #CBA35C;
+    }
+    section{
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        color: whitesmoke;
+    }
+    .products{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .products img{
+        width:300px;
+        height: 300px;
+    }
+    .product{
+        padding: 25px;
+        border: 2px solid black;
+        border-radius: 12px;
+    }
+    .product h3{
+        border-bottom: 1px solid black;
+    }
+    footer h1{
+        color: #CBA35C;
+        text-align: center;
+    }
+    footer{
+        width: 1200px;
+        background-color: #1D1616;
+        color: #EEEEEE;
+        margin-top: 20px;
+        float: left;
+        font-size: 20px;
+        padding: 10px;   
+    }
+    footer p{
+        text-align: left;
+    }
+</style>
+<body>
+    <header>
+        <a href="#"><img src="MohanJewellers LOGO.png" alt="mjh_logo" ></a>
+        <h1> MOHAN JEWELLERS </h1>
+    </header>
+    <div id="overflow">
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a> 
+            <a href="#Products">Products</a>
+            <a href="#">Contact</a>
+        </div>
+    <main>
+        <div class="rates">
+            <div class="gold">
+                <h2>Gold Rate (1 gm)</h2>
+                <p>₹7250</p>
+            </div>
+            <div class="silver">
+                <h2>Silver Rate (10gms)</h2>
+                <p>₹920</p>
+            </div>
+        </div>
+        <div class="about">
+            <h1>About</h1>
+            <p>Welcome to our Jewelry Store! We offer the finest collection of gold, silver, and diamond jewelry. Visit us to explore our exclusive range.</p>
+        </div>
+    </main>
+    <section>
+        <h2>Products</h2>
+        <div class="products" id="Products">
+            <div class="product">
+                <img src="goldring.jpg" alt="goldring">
+                <h3>Gold Ring</h3>
+            </div>
+            <div class="product">
+                <img src="silverchain.jpg" alt="silvernecklace">
+                <h3>Silver Chain</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>Contact</h1>
+        <p>Instagram :</p>
+        <p>Contact number : 9343411866, 8310591593</p>
+        <p>Location :</p>
+    </footer>
+    </div>
+</body>
+</html>
