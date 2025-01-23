@@ -1,1 +1,7 @@
-css- cascading style sheet
+CSS- cascading style sheet
+
+<link rel="stylesheet" href="style.css">
+
+to comment in css code we need to use
+/*this is a comment*/
+
