@@ -5,3 +5,13 @@ CSS- cascading style sheet
 to comment in css code we need to use
 /*this is a comment*/
 
+Background Image
+background-image:url("paper.jpeg");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:right top;
+Add all into a single line
+background:url() fixed right top;
+
+
+
