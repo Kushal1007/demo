@@ -13,5 +13,12 @@ background-position:right top;
 Add all into a single line
 background:url() fixed right top;
 
+text-decoration-line:underline;
+text-decoration-style:dashed;
+text-decoration-color:red;
+text-decoration-thickness:5px;
+
+
+
 
 
