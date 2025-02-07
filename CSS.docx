@@ -21,6 +21,14 @@ text-decoration-thickness:5px;
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <i class="material-icons">cloud</i>
 
+a:link{
+color:red;}Default color for any unvisited link
+a:visited{
+color:blue;}Changes color to blue to any link which is visited
+a:hover, a:active{
+border:1 px solid green;}
+
+
 
 
 
