@@ -30,7 +30,13 @@ border:1 px solid green;}
 
 
 list-style-type
+list-style-image:url();
 list-style-position:outside;inside
+list-style:square inside url();
+
+
+
+
 
 
 
