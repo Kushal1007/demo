@@ -29,6 +29,10 @@ a:hover, a:active{
 border:1 px solid green;}
 
 
+list-style-type
+list-style-position:outside;inside
+
+
 
 
 
